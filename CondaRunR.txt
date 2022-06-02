@@ -1,0 +1,17 @@
+Below is a quick and short introduction to show how to run R with Jupyter Notebook
+1. Install Kernel for R
+1) Download and install R software in your computer system (Linux, Windows, Mac, etc.)
+2) install.packages("devtools")
+3) devtools::install_github("IRkernel/IRkernel")
+4) devtools::install_github('IRkernel/IRdisplay')
+5) IRkernel::installspec()  
+6) quit()
+
+2. Add R to Jupyter Notebook
+1) conda install -c r r-irkernel OR conda update -c r r-irkernel
+2) lauch Jupyter, click on "New" and select "R"
+
+If R kernel in Jupyter keeps dying try:
+a)conda uninstall r-base; key in "which R" to make sure R works (not Anaconda R). 
+b)conda install -c r r-essentials
+c)conda install -c defaults zeromq
